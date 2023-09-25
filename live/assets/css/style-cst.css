@@ -1,0 +1,40 @@
+.caminhoshero {
+    width: 500px;
+  }
+
+.btn2nd {
+    margin-top: 4.8px;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+#video-volume {
+    display: none;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  @media only screen and (max-width: 600px) {
+    .caminhoshero {
+      width: 350px;
+    }
+    .video-controls {
+        display: none;
+    }
+    
+  }
