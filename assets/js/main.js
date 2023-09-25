@@ -848,44 +848,44 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     });
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function() {
-    var players = {};  
+// document.addEventListener("DOMContentLoaded", function() {
+//     var players = {};  
 
-    window.onYouTubeIframeAPIReady = function() {
-        console.log("API do YouTube pronta!");
+//     window.onYouTubeIframeAPIReady = function() {
+//         console.log("API do YouTube pronta!");
 
      
-        players['videoifr1'] = new YT.Player('videoifr1', {
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
+//         players['videoifr1'] = new YT.Player('videoifr1', {
+//             events: {
+//                 'onReady': onPlayerReady
+//             }
+//         });
 
       
-        players['videoifr2'] = new YT.Player('videoifr2', {
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
+//         players['videoifr2'] = new YT.Player('videoifr2', {
+//             events: {
+//                 'onReady': onPlayerReady
+//             }
+//         });
        
-        players['videoifr3'] = new YT.Player('videoifr3', {
-            events: {
-                'onReady': onPlayerReady
-            }
-        });
-    }
+//         players['videoifr3'] = new YT.Player('videoifr3', {
+//             events: {
+//                 'onReady': onPlayerReady
+//             }
+//         });
+//     }
 
-    function onPlayerReady(event) {
-        console.log("Reprodutor do YouTube pronto!");
+//     function onPlayerReady(event) {
+//         console.log("Reprodutor do YouTube pronto!");
 
-        var videoFrame = event.target.getIframe();
+//         var videoFrame = event.target.getIframe();
 
-        videoFrame.addEventListener('mouseover', function() {
-            event.target.playVideo();
-        });
+//         videoFrame.addEventListener('mouseover', function() {
+//             event.target.playVideo();
+//         });
 
-        videoFrame.addEventListener('mouseout', function() {
-            event.target.pauseVideo();
-        });
-    }
-});
+//         videoFrame.addEventListener('mouseout', function() {
+//             event.target.pauseVideo();
+//         });
+//     }
+// });
