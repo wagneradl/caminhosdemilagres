@@ -8,14 +8,6 @@
   pointer-events: none;
 }
 
-.video-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-
 .caminhoshero {
     width: 500px;
   }
@@ -26,21 +18,6 @@
 
 html {
   scroll-behavior: smooth; 
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* Proporção 16:9 */
-  overflow: hidden;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
   @media only screen and (max-width: 600px) {
