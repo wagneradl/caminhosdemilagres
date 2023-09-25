@@ -85,7 +85,6 @@
       sizes="16x16"
       href="assets/images/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
       name="msapplication-TileImage"
@@ -182,25 +181,12 @@
           </div>
         </div>
       </nav>
-      <section
-        class="home-section bg-dark-30"
-        id="home"
-        data-background="assets/images/finance/finance_header_bg.png"
-      >
-        <div
-          class="video-player"
-          data-property="{videoURL:'https://www.youtube.com/watch?v=HyUd06WEeAs', containment:'.home-section', startAt:30, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"
-        ></div>
-        <div class="video-controls-box">
-          <div class="container">
-            <div class="video-controls">
-              <a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a
-              ><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a>
-            </div>
-          </div>
-        </div>
-        <div class="titan-caption">
-          <div class="caption-content">
+      
+     <section class="home-section bg-dark-30" id="home" data-background="assets/images/finance/finance_header_bg.png">
+      <div id="heroVideo" class="video-player"></div>
+
+    <div class="titan-caption">
+        <div class="caption-content">
             <div>
               <img
                 src="/assets/images/finance/pastora.jpg"
@@ -228,11 +214,12 @@
             >
           </div>
         </div>
-        <section class="module-extra-small bg-dark">
+
+        <section class="module-extra-small bg-dark" style="position: relative; z-index: 1;">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
-                <div class="callout-text font-alt">
+              <div class="col-sm-6 col-md-8 col-lg-6">
+                <div class="callout-text font-alt jornada">
                   <h4 style="margin-top: 0px">Uma Jornada de Transformação</h4>
                   <p style="margin-bottom: 0px">
                     Descubra os caminhos milagrosos que a fé pode traçar em sua
@@ -307,7 +294,7 @@
 
                 <div class="row multi-columns-row mb-70">
                   <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="content-box">
+                    <div class="content-box" style="border: 1px solid rgb(38, 38, 38); padding: 30px">
                       <div class="video-container">
                         <iframe
                           id="videoifr1"
@@ -323,13 +310,12 @@
                       >
                         Testemunho de Vida
                       </h3>
-                      A história de vida da pastora, seu testemunho: o milagre
-                      de Deus em sua vida.
+                      A história de vida da Pastora Tânia Tereza, revelando seu profundo testemunho e o milagre divino de Deus que transformou sua trajetória.
                     </div>
                   </div>
 
                   <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="content-box">
+                    <div class="content-box" style="border: 1px solid rgb(38, 38, 38); padding: 30px">
                       <div class="video-container">
                         <iframe
                           id="videoifr2"
@@ -352,7 +338,7 @@
                   </div>
 
                   <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="content-box">
+                    <div class="content-box" style="border: 1px solid rgb(38, 38, 38); padding: 30px">
                       <div class="video-container">
                         <iframe
                           id="videoifr3"
@@ -406,11 +392,11 @@
     JavaScripts
     =============================================
     -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="assets/lib/jquery/dist/jquery.js"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="assets/lib/wow/dist/wow.js"></script>
-        <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
         <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
         <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
         <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
@@ -418,11 +404,6 @@
         <script src="assets/lib/smoothscroll.js"></script>
         <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-        <script
-          async=""
-          defer=""
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"
-        ></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
       </section>
