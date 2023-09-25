@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 #heroVideo {
   position: absolute;
   top: 0;
@@ -48,6 +52,10 @@ html {
     transform: scale(4);
     }
 
+    #inscrdesk {
+      display: none;
+    }
+
 .jornada {
   margin: 0 0 0;
 }
@@ -58,4 +66,10 @@ html {
    .btn2nd {
     margin-left: 390px;
    }
+  }
+
+  @media (min-width: 576px) {
+    #inscrmob {
+      display: none !important;
+    }
   }
