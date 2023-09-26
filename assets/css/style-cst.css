@@ -40,6 +40,11 @@ html {
 }
 
   @media only screen and (max-width: 600px) {
+
+    .home-section {
+      height: 800px !important;
+    }
+
     .caminhoshero {
       width: 350px;
     }
@@ -61,6 +66,20 @@ html {
        height: 100vh;
     }
 
+    .herocontent {
+      padding-top: 50px !important;
+    }
+
+    #socialmob {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-social-links {
+      font-size: 16px !important;
+    }
+
 .jornada {
   margin: 0 0 0;
 }
@@ -77,10 +96,6 @@ html {
     #inscrmob {
       display: none !important;
     }
-
-.herocontent {
-  padding-top: 50px !important;
-}
 
   }
 
