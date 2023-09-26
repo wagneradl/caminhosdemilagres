@@ -572,7 +572,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.onYouTubeIframeAPIReady = function() {
         console.log("API do YouTube pronta!");
 
-        // Player para o vídeo de hero
         heroVideo = new YT.Player('heroVideo', {
             videoId: 'HyUd06WEeAs',
             playerVars: {
@@ -582,11 +581,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rel': 0,
                 'loop': 1,
                 'mute': 1,
-                'playlist': 'HyUd06WEeAs'
-            }
+                'playlist': 'HyUd06WEeAs',
+                'modestbranding': 1, 
+            }            
         });
 
-        // Players para vídeos múltiplos, se ainda forem necessários.
         players['videoifr1'] = new YT.Player('videoifr1', { events: { 'onReady': onPlayerReady } });
         players['videoifr2'] = new YT.Player('videoifr2', { events: { 'onReady': onPlayerReady } });
         players['videoifr3'] = new YT.Player('videoifr3', { events: { 'onReady': onPlayerReady } });
@@ -606,7 +605,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Funções de controle para o vídeo de hero
     $('#video-play').click(function(event) {
         event.preventDefault();
         if ($(this).hasClass('fa-play')) {
@@ -629,3 +627,4 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
     });
 });
+

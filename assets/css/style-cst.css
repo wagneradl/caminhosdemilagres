@@ -1,3 +1,21 @@
+#faq {
+  padding-bottom: 20px;
+}
+
+.videodes {
+  padding: 0px 30px 30px 30px;
+}
+
+.videofrm {
+  height: 200px;
+  width: 100%;
+}
+
+.bgvideos {
+border: 1px solid rgb(48, 48, 48); 
+background-color:rgb(26, 26, 26);
+}
+
 #heroVideo {
   position: absolute;
   top: 0;
@@ -6,8 +24,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  max-width: 100%;  /* Adicionando limitação */
-  max-height: 100%; /* Adicionando limitação */
+  max-width: 100%; 
 }
 
 .caminhoshero {
@@ -60,4 +77,11 @@ html {
     #inscrmob {
       display: none !important;
     }
+
+.herocontent {
+  padding-top: 50px !important;
+}
+
   }
+
+  
