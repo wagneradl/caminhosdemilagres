@@ -82,6 +82,26 @@ html {
 
   @media only screen and (max-width: 600px) {
 
+#pabout {
+  padding-top: 30px;
+}
+
+#maspmob {
+  padding-bottom: 20px;
+}
+
+#titabout {
+  display: none;
+}
+
+#maspdesk {
+  display: none !important;
+}
+
+    .btnguia {
+    margin-bottom: 30px;
+    }
+
     #garantamenu {
       background-color: transparent; /* Sem fundo */
       color: #68ab8b; /* Cor inicial */
@@ -161,6 +181,14 @@ html {
   @media (min-width: 576px) {
     #inscrmob {
       display: none !important;
+    }
+
+    #maspmob {
+      display: none !important;
+    }
+
+    #aboutmpic {
+      display: none;
     }
 
   }
