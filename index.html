@@ -177,6 +177,7 @@
               <li><a href="#detalhes">DETALHES DO EVENTO</a></li>
               <li><a href="#faq">FAQ</a></li>
               <li><a href="#contato">CONTATO</a></li>
+              <li><a style="margin-top: 5px; margin-left: 15px;" id="garantamenu" href="https://sun.eduzz.com/2110899" target="_blank" rel="noopener noreferrer">INSCREVA-SE</a></li>
             </ul>
           </div>
         </div>
@@ -215,8 +216,8 @@
                 src="/assets/images/finance/logo_.png"
               />
             </div>
-            <a class="section-scroll btn btn-border-w btn-round" href="#about"
-              >Inscreva-se</a
+            <a class="section-scroll btn btn-border-w btn-round" href="https://sun.eduzz.com/2110899" target="_blank" rel="noopener noreferrer"
+              >Garanta sua Vaga</a
             >
           </div>
         </div>
@@ -239,7 +240,7 @@
 
               <div class="col-sm-6 col-md-4 col-lg-2">
                 <div class="callout-btn-box">
-                  <a class="btn btn-w btn-round btn2nd" href="#">SAIBA MAIS</a>
+                  <a class="btn btn-w btn-round btn2nd" href="#detalhes">SAIBA MAIS</a>
                 </div>
               </div>
             </div>
@@ -423,9 +424,13 @@
               <div class="col-sm-6">
                 <div style="color: #666;">
                 <h4 class="font-alt">Detalhes do Evento</h4><br/>
-                <p style="font-size: 15px;">O evento <b>“Caminhos de Milagres”</b> vai acontecer no coração da cidade de São Paulo, próximo ao MASP, uma região de fácil acesso, com muitos hosteis e restaurantes.</p>
+                <p style="font-size: 15px;">O evento <b>“Caminhos de Milagres”</b> vai acontecer no coração da cidade de São Paulo, próximo ao MASP, uma região de fácil acesso, com muitos hotéis e restaurantes.</p>
                 <p style="font-size: 15px;"><b>Local do evento:</b> Edifício Paulista Corporate – 12º Andar, Av. Paulista, 1.636 – Bela Vista, São Paulo – SP, 01310-200</p>
                 <p style="font-size: 15px;"><b>Data:</b> 24 e 25 de novembro de 2023</p>
+                <p style="font-size: 15px;">Você pode obter um guia completo com estacionamentos, hotéis, cafés, mercados, restaurantes, shoppings e áreas de descanso clicando no botão abaixo:</p>
+                <a class="section-scroll btn btn-border-w btn-round btnguia" href="/assets/docs/guia_febracis_.pdf" download
+              >Guia de Locais</a
+            >
               </div>
               </div>
               <div class="col-sm-6">
@@ -459,15 +464,15 @@
               </div>
               <div class="col-sm-8">
                 <div class="row">
-                  <form class="form rqst-form" id="requestACall" role="form" method="post" action="php/request_call.php">
+                  <form class="form rqst-form" id="requestACall" role="form" method="post" action="">
                     <div class="form-group col-sm-6 col-xs-12">
                       <input class="form-control input-lg" type="text" name="name" placeholder="NOME COMPLETO"/>
                     </div>
                     <div class="form-group col-sm-6 col-xs-12">
-                      <input class="form-control input-lg" type="text" name="phone" placeholder="WHATSAPP"/>
+                      <input class="form-control input-lg" type="number" name="phone" placeholder="WHATSAPP"/>
                     </div>
                     <div class="form-group col-sm-6 col-xs-12">
-                      <input class="form-control input-lg" type="text" name="phone" placeholder="E-MAIL"/>
+                      <input class="form-control input-lg" type="text" name="question" placeholder="SUA MENSAGEM"/>
                     </div>
                     <div class="form-group col-sm-6 col-xs-12">
                       <button class="btn btn-border-w btn-circle btn-block" id="racSubmit" type="submit"><i class="fa fa-paper-plane-o"></i> ENVIAR</button>

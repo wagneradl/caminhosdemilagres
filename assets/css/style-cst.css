@@ -1,3 +1,44 @@
+@keyframes pulse {
+  0% {
+      background-color: #68ab8b; /* Cor inicial */
+      transform: scale(1);
+  }
+  50% {
+      background-color: #7bc9a6; /* Cor intermediária */
+      transform: scale(1.05);
+  }
+  100% {
+      background-color: #68ab8b; /* Cor inicial */
+      transform: scale(1);
+  }
+}
+
+#garantamenu {
+  background-color: #68ab8b; /* Cor inicial */
+  color: #ffffff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno para dar destaque */
+  border-radius: 5px; /* Bordas arredondadas */
+  animation: pulse 2s infinite; /* Animação de pulsação */
+  transition: all 0.3s ease; /* Transição suave para hover e outros efeitos */
+}
+
+#garantamenu:hover {
+  background-color: #57a57f; /* Cor ao passar o mouse */
+  transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+
+.btnguia {
+  border: 1px solid black !important;
+  color:  black !important;
+}
+
+.btnguia:hover,
+.btnguia:focus {
+  background: black !important;
+  color: white !important;
+}
+
 #faq {
   padding-bottom: 20px;
 }
@@ -40,6 +81,31 @@ html {
 }
 
   @media only screen and (max-width: 600px) {
+
+    #garantamenu {
+      background-color: transparent; /* Sem fundo */
+      color: #68ab8b; /* Cor inicial */
+      padding: 10px 20px;
+      border-radius: 0; /* Sem bordas arredondadas */
+      animation: colorPulse 1s infinite; /* Animação de mudança de cor */
+      transition: color 0.3s ease; /* Transição suave para hover */
+  }
+
+  #garantamenu:hover {
+      color: #57a57f; /* Cor ao passar o mouse */
+  }
+
+  @keyframes colorPulse {
+      0% {
+          color: #68ab8b; /* Cor inicial */
+      }
+      50% {
+          color: #7bc9a6; /* Cor intermediária */
+      }
+      100% {
+          color: #68ab8b; /* Cor inicial */
+      }
+  }
 
     .home-section {
       height: 800px !important;
