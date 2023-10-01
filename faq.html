@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- Template specific stylesheets-->
+     <link
+     href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700"
+     rel="stylesheet"
+   />
+   <link
+     href="https://fonts.googleapis.com/css?family=Volkhov:400i"
+     rel="stylesheet"
+   />
+   <link
+     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+     rel="stylesheet"
+   />
+   <link href="assets/lib/animate.css/animate.css" rel="stylesheet" />
+   <link
+     href="assets/lib/components-font-awesome/css/font-awesome.min.css"
+     rel="stylesheet"
+   />
+   <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet" />
+   <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet" />
+   <link
+     href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css"
+     rel="stylesheet"
+   />
+   <link
+     href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css"
+     rel="stylesheet"
+   />
+   <link
+     href="assets/lib/magnific-popup/dist/magnific-popup.css"
+     rel="stylesheet"
+   />
+   <link
+     href="assets/lib/simple-text-rotator/simpletextrotator.css"
+     rel="stylesheet"
+   />
+   <!-- Main stylesheet and color file-->
+   <link href="assets/css/style.css" rel="stylesheet" />
+   <link href="assets/css/style-cst.css" rel="stylesheet" />
+   <link
+     id="color-scheme"
+     href="assets/css/colors/default.css"
+     rel="stylesheet"
+   />
+</head>
+<body>
+
+    <style>
+
+.accordion-button::after {
+    display: none;  /* Isso oculta o ícone padrão de colapso/expansão */
+}
+
+
+body {
+    background-color: #111111;
+}
+        /* Estilo para o background do Accordion */
+.accordion {
+    background-color: #111111;
+}
+
+/* Estilo para o background dos cabeçalhos das perguntas quando eles estão colapsados */
+.accordion-button.collapsed {
+    background-color: #111111;
+    color: #ffffff; /* Ajuste a cor do texto para garantir que ele seja legível */
+}
+
+/* Estilo para o background dos cabeçalhos das perguntas quando eles estão expandidos */
+.accordion-button:not(.collapsed) {
+    background-color: #1c1c1c; /* Escolha um tom ligeiramente diferente para indicar o estado expandido, se desejar */
+    color: #ffffff;
+}
+
+/* Estilo para o background dos corpos das perguntas */
+.accordion-collapse {
+    background-color: #111111;
+}
+
+/* Estilo para o conteúdo dos corpos das perguntas */
+.accordion-body {
+    background-color: #111111;
+    color: #ffffff; /* Ajuste a cor do texto para garantir que ele seja legível */
+}
+
+/* Para qualquer outro texto ou links dentro do Accordion */
+.accordion a {
+    color: #68ab8b; /* Escolha uma cor que seja legível e contraste bem com o fundo escuro */
+}
+
+.accordion a:hover {
+    color: #68ab8b; /* Cor quando o link é focado ou passado o mouse por cima */
+}
+
+    </style>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <!-- Pergunta 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Qual é a data do evento?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">O evento “Caminhos de Milagres” será realizado nos dias 24 e 25 de novembro de 2023.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Onde ocorrerá o evento?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">O evento será no Edifício Paulista Corporate – 12º Andar, Av. Paulista, 1.636 – Bela Vista, São Paulo – SP, 01310-200.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Quanto é o valor do ingresso?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">O ingresso individual para os 2 dias de evento tem o valor de R$ xx,xx.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Como posso pagar?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">O pagamento pode ser realizado à vista (boleto ou PIX) ou parcelado no cartão em até 12x R$ XX,XX.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              A hospedagem está inclusa?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Não. O valor do ingresso corresponde apenas ao evento. Entretanto, a região é bem servida de hotéis e restaurantes.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Qual a idade mínima para participar?
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">A idade mínima para participar é de 13 anos. Não é permitida a presença de crianças durante o evento.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              O evento será transmitido online?
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Não. O evento será apenas presencial.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+              Haverá venda de livros?
+            </button>
+          </h2>
+          <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Sim, todos os livros do Ministério Tânia Tereza estarão disponíveis para compra.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+              Haverá atendimento individual?
+            </button>
+          </h2>
+          <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Não. Caso deseje ter um atendimento individual, recomendamos que participe do SILC (Seminário Intensivo de Libertação e Cura). Acesse a agenda <a href="http://www.pastorataniatereza.com/Departamento/1/Seminario-Intensivo-de-Libertacao-e-Cura">aqui</a>.</div>
+          </div>
+        </div>
+      
+        <!-- Pergunta 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+              Existe estacionamento no local?
+            </button>
+          </h2>
+          <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Sim! A diária custa 40 reais e os horários de funcionamento serão, na sexta, das 6h às 22h e, no sábado, das 6h às 18h. Há outras opções particulares nas proximidades que são perfeitas para o evento. Duas opções são o Blue Tree Premium Paulista (Rua Peixoto Gomide, 707) e o Hospital 9 de Julho (Rua Peixoto Gomide, 545). Ambos funcionam 24 horas por dia. Você pode baixar um guia clicando <a href="/assets/docs/guia_febracis_.pdf" download>aqui</a>.</div>
+          </div>
+        </div>
+      
+      </div>
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
