@@ -188,7 +188,7 @@ html {
     }
 
     #aboutmpic {
-      display: none;
+      display: none !important;
     }
 
   }
