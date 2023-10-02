@@ -8,7 +8,7 @@
       transform: scale(1.05);
   }
   100% {
-      background-color: #68ab8b; /* Cor inicial */
+      background-color: #024c28; /* Cor inicial */
       transform: scale(1);
   }
 }
@@ -23,7 +23,7 @@
 
 #faq .panel-body a {
   /* Estilos para os links aqui */
-  color: #68ab8b; /* Substitua #DesejadaCorHex pela cor desejada */
+  color: #04904c; /* Substitua #DesejadaCorHex pela cor desejada */
 }
 
 #faq .panel-body a:hover {
