@@ -13,6 +13,14 @@
   }
 }
 
+.panel-heading {
+  padding: 15px !important;
+}
+
+.panel {
+  border: 0px !important;
+}
+
 #faq .panel-body a {
   /* Estilos para os links aqui */
   color: #68ab8b; /* Substitua #DesejadaCorHex pela cor desejada */
