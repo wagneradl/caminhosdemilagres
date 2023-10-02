@@ -421,7 +421,7 @@
                 $cfsubmit = $("#cfsubmit"),
                 cfsubmitText = $cfsubmit.text();
 
-            $cfsubmit.text("Sending...");
+            $cfsubmit.text("Enviando...");
 
 
             $.ajax(
@@ -430,12 +430,12 @@
                     type: "POST",
                     data: postData,
                     success: function (data) {
-                        $cfResponse.html(data);
+                        $cfResponse.html('<div style="display: flex; align-items: center; justify-content: center;"><span style="color: #3dcc87; padding-top: 20px; font-size: 14px;"><b>Mensagem Enviada! Obrigado!</b></span></div>');
                         $cfsubmit.text(cfsubmitText);
                         $('#contactForm input[name=name]').val('');
                         $('#contactForm input[name=email]').val('');
                         $('#contactForm textarea[name=message]').val('');
-                    },
+                    },                    
                     error: function (data) {
                         alert("Error occurd! Please try again");
                     }

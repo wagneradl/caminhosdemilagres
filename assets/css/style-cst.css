@@ -13,13 +13,34 @@
   }
 }
 
+#faq .panel-body a {
+  /* Estilos para os links aqui */
+  color: #68ab8b; /* Substitua #DesejadaCorHex pela cor desejada */
+}
+
+#faq .panel-body a:hover {
+  /* Estilos para o estado hover aqui */
+  color: #3dcc87; /* Substitua #DesejadaCorHexHover pela cor desejada ao passar o mouse */
+}
+
+
+.panel-heading {
+  background-color: #222222 !important;;
+}
+
+.panel-body {
+  color: black;
+  background-color: #d6d6d6;
+  font-size: 13px;
+}
+
 #garantamenu {
   background-color: #68ab8b; /* Cor inicial */
   color: #ffffff; /* Cor do texto */
   padding: 10px 20px; /* Espaçamento interno para dar destaque */
   border-radius: 5px; /* Bordas arredondadas */
-  animation: pulse 2s infinite; /* Animação de pulsação */
-  transition: all 0.3s ease; /* Transição suave para hover e outros efeitos */
+  animation: pulse 1.5s infinite; /* Animação de pulsação */
+  transition: all 1s ease; /* Transição suave para hover e outros efeitos */
 }
 
 #garantamenu:hover {
@@ -81,6 +102,14 @@ html {
 }
 
   @media only screen and (max-width: 600px) {
+    
+.mailc {
+  display: none;
+}
+
+.contatodesk {
+  display: none;
+}
 
 #pabout {
   padding-top: 30px;
@@ -188,6 +217,14 @@ html {
     }
 
     #aboutmpic {
+      display: none !important;
+    }
+
+    .contatomob {
+      display: none !important;
+    }
+
+    .contactsub {
       display: none !important;
     }
 
