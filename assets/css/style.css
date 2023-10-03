@@ -75,7 +75,7 @@ a,
 }
 
 /* Reset border-radius */
-.well,
+/* .well,
 .label,
 .alert,
 .progress,
@@ -86,7 +86,7 @@ a,
 .nav-tabs > li > a,
 .nav-pills > li > a {
   border-radius: 2px;
-}
+} */
 
 .pr-remove {
   /*vertical-align: middle !important;*/
