@@ -34,7 +34,7 @@
 .garantavaga::after {
   background-color: #000000 !important;
   border: 1px solid #00b086 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 #datalocal {
