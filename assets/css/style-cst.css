@@ -36,9 +36,10 @@
   color: #ffffff !important;
 }
 
-#datalocal p {
-  font-size: 20px !important; 
-  margin-top: -20px !important;
+#datalocal {
+  font-size: 20px; 
+  margin-top: -20px;
+  padding-bottom: 20px;
 }
 
 #faq .panel-body a {
@@ -132,9 +133,7 @@ html {
   @media only screen and (max-width: 600px) {
     
     #datalocal {
-      font-size: 20px; 
       padding: 0px 80px;
-      margin-top: -20px;
     }
 
 .mailc {
