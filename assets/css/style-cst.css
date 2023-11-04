@@ -32,8 +32,8 @@
 }
 
 #datalocal {
-  font-size: 20px; 
-  margin-top: -20px;
+  font-size: 20px !important; 
+  margin-top: -20px !important;
 }
 
 #faq .panel-body a {
@@ -255,21 +255,6 @@ html {
 
     .contactsub {
       display: none !important;
-    }
-
-    .garantavaga {
-      background-color: #000000 !important;
-      border: 1px solid #00b086 !important;
-    }
-    
-    .garantavaga:hover {
-      background-color: #00b086 !important;
-      border: #000000 !important;
-    }
-    
-    #datalocal {
-      font-size: 20px; 
-      margin-top: -20px;
     }
 
 #home {
