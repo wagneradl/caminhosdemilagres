@@ -24,7 +24,7 @@
 .garantavaga {
   background-color: #000000;
   border: 1px solid #00b086;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .garantavaga:hover {
