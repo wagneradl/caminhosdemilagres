@@ -21,18 +21,18 @@
   border: 0px !important;
 }
 
-.garantavaga {
+a.garantavaga {
   color: #ffffff !important;
   background-color: #000000 !important;
   border: 1px solid #00b086 !important;
 }
 
-.garantavaga:hover {
+a.garantavaga:hover {
   background-color: #00b086 !important;
   border: 1px solid #00b086 !important; 
 }
 
-.garantavaga:focus {
+a.garantavaga:focus {
   color: #ffffff !important;
 }
 
