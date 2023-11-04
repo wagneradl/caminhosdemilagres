@@ -21,6 +21,21 @@
   border: 0px !important;
 }
 
+.garantavaga {
+  background-color: #000000 !important;
+  border: 1px solid #00b086 !important;
+}
+
+.garantavaga:hover {
+  background-color: #00b086 !important;
+  border: #000000;
+}
+
+#datalocal {
+  font-size: 20px; 
+  margin-top: -20px;
+}
+
 #faq .panel-body a {
   /* Estilos para os links aqui */
   color: #68ab8b; /* Substitua #DesejadaCorHex pela cor desejada */
@@ -111,6 +126,12 @@ html {
 
   @media only screen and (max-width: 600px) {
     
+    #datalocal {
+      font-size: 20px; 
+      padding: 0px 80px;
+      margin-top: -20px;
+    }
+
 .mailc {
   display: none;
 }
@@ -236,6 +257,10 @@ html {
       display: none !important;
     }
 
+#home {
+  padding-top: 60px;
+}
+    
   }
 
   @media only screen 
